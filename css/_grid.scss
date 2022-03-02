@@ -41,6 +41,14 @@ $s-device: 480px;
 	@return $result;
 }
 
+// Gera as classes de grid
+
+@for $i from 1 through $cols {
+  .grid-#{$i} {
+    width: grid($i);
+  }
+}
+
 // Mixin estrutura do grid
 
 @mixin grid-structure {
